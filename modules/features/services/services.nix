@@ -3,12 +3,7 @@
   flake.nixosModules.services = { pkgs, lib, ... }:
   {
     networking.networkmanager.enable = true;
-
-    networking =
-    {
-		nameservers = [ "9.9.9.9" ];
-		networkmanager.dns = "none";
-	};
+    services.resolved.enable = true;
 
     hardware.bluetooth =
     {
@@ -35,10 +30,6 @@
 		alsa.support32Bit = true;
 		pulse.enable = true;
 	};
-
-#	services.asusd.enable = true;
-
-#	networking.enableIPv6 = false;
 
 	services.handheld-daemon =
 	{

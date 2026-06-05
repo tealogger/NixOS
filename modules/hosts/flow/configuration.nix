@@ -1,6 +1,5 @@
 { self, inputs, ... }: 
 {
-
   flake.nixosModules.flowConfiguration = { pkgs, lib, ... }: 
   {
     imports = 
@@ -11,9 +10,8 @@
       self.nixosModules.limine
       self.nixosModules.programs
       self.nixosModules.fonts
+      self.nixosModules.cachyosKernel
     ];
-
-    boot.kernelPackages = pkgs.linuxPackages_latest;
 
 	networking.hostName = "flow";
 

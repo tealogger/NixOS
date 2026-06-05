@@ -7,10 +7,9 @@
 		environment.systemPackages = with pkgs;
 		[
 			#Internet
-			librewolf
+			brave
 			vesktop
 			proton-vpn
-			ungoogled-chromium
 			telegram-desktop
 
 			#Media
@@ -47,6 +46,7 @@
 			#Productivity
 			weka
 			onlyoffice-desktopeditors
+			anytype
 		];
 
 		programs.git.enable = true;
