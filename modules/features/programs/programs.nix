@@ -17,15 +17,13 @@
 			kdePackages.kolourpaint
 			haruna
 			obs-studio
+			drawy
 
 			#Editors
 			kdePackages.kate
-			zed-editor
 
 			#Utilities
 			kitty
-			kdePackages.plasma-keyboard
-			kdePackages.kbackup
 			solaar
 			gparted
 
@@ -46,9 +44,14 @@
 			#Productivity
 			weka
 			onlyoffice-desktopeditors
-			anytype
+
+			#Development
+			devenv
+			vscode
+			zed-editor
 		];
 
+		programs.nix-ld.enable = true;
 		programs.git.enable = true;
 		programs.fish.enable = true;
 		programs.gamemode.enable = true;

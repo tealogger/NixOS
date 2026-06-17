@@ -10,20 +10,20 @@
 	boot.initrd.kernelModules = [ ];
 	boot.kernelModules = [ "kvm-amd" "ntsync" ];
 	boot.extraModulePackages = [ ];
-	boot.kernelParams = [ "amdgpu.dcdebugmask=0x410" ];
+	boot.kernelParams = [ "amdgpu.dcdebugmask=0x400" ];
 
 	fileSystems."/" =
-	{ device = "/dev/mapper/luks-ed3a4612-b6f0-4009-9b2a-1e6f3316cfd3";
-	fsType = "ext4";
-	};
+		{ device = "/dev/mapper/luks-09706245-93cd-4072-a080-c0f1fe81dc57";
+		fsType = "ext4";
+		};
 
-	boot.initrd.luks.devices."luks-ed3a4612-b6f0-4009-9b2a-1e6f3316cfd3".device = "/dev/disk/by-uuid/ed3a4612-b6f0-4009-9b2a-1e6f3316cfd3";
+	boot.initrd.luks.devices."luks-09706245-93cd-4072-a080-c0f1fe81dc57".device = "/dev/disk/by-uuid/09706245-93cd-4072-a080-c0f1fe81dc57";
 
 	fileSystems."/boot" =
-	{ device = "/dev/disk/by-uuid/EBE9-3E42";
-	fsType = "vfat";
-	options = [ "fmask=0077" "dmask=0077" ];
-	};
+		{ device = "/dev/disk/by-uuid/6801-6098";
+		fsType = "vfat";
+		options = [ "fmask=0077" "dmask=0077" ];
+		};
 
 	swapDevices = [{
 		device = "/var/lib/swapfile";

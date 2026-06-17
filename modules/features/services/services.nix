@@ -9,13 +9,6 @@
     {
 		enable = true;
 		powerOnBoot = false;
-		settings =
-		{
-			General =
-			{
-				Experimental = true;
-			};
-		};
 	};
 	hardware.enableAllFirmware = true;
 
@@ -35,9 +28,9 @@
 	{
 		user = "tq";
 		enable = true;
-		adjustor.enable = true;
-		adjustor.loadAcpiCallModule = true;
 		ui.enable = true;
+		adjustor.enable = true;
+		adjustor.loadAcpiCallModule=true;
 	};
 	services.power-profiles-daemon.enable = false;
   };

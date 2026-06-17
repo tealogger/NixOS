@@ -10,10 +10,13 @@
 			secureBoot.enable = true;
 			style =
 			{
-# 					wallpapers =
-# 					[
-# 							../../modules/themes/wallpapers/flee_puny_mortals_fleeeee__by_neytirix_desjf2j.jpg
-# 					];
+				wallpapers =
+				[
+						../wallpapers/wallhaven-gw2mel.png
+				];
+
+				wallpaperStyle = "centered";
+
 				interface.branding = "I use Nixos BTW!!!";
 			};
 			extraEntries =
